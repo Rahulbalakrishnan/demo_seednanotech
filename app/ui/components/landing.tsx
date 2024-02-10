@@ -15,7 +15,7 @@ export default function Landing() {
       <Blogs />
       <Research />
       <Contact />
-      <Navigation/>
+      
     </>
   );
 }

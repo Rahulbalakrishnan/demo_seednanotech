@@ -6,9 +6,11 @@ import Navigation from "./ui/navigation/navigation";
 export default function Home() {
   return (
     <>
-      <main className=" min-h-screen flex flex-col">
+      <main className="w-full min-h-screen  flex flex-col bg-cover" style={{backgroundImage:'url("/Image/site-bg.jpg")'}}>
+        
         <Landing />
       </main>
+      <Navigation/>
     </>
   );
 }
