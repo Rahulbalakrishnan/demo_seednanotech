@@ -1,55 +1,26 @@
+"use client";
 
+import Blogs from "./ui/components/blogs";
+import Contact from "./ui/components/contact";
+import Product from "./ui/components/product";
+import Project from "./ui/components/project";
+import Research from "./ui/components/research";
+import Welcome from "./ui/components/welcome";
+import Navigation from "./ui/navigation/navigation";
 
 export default function Home() {
   return (
-    <main className=" min-h-screen flex flex-col">
+    <>
+      <main className=" min-h-screen flex flex-col">
+        <Welcome />
+        <Product />
+        <Project />
+        <Blogs />
+        <Research />
+        <Contact />
 
-
-
-      {/* TODO : Hero Page */}
-      <div className="w-full h-screen ">
-        <section>
-          <h1>Seed nano tech...</h1>
-        </section>
-      </div>
-
-
-
-
-      {/* TODO : Other Page */}
-      <div className="w-full h-screen ">
-        <section>
-          <h1>Seed nano tech...</h1>
-        </section>
-      </div>
-
-      {/* TODO : Other Page */}
-      <div className="w-full h-screen ">
-        <section>
-          <h1>Seed nano tech...</h1>
-        </section>
-      </div>
-
-      {/* TODO : Other Page */}
-      <div className="w-full h-screen ">
-        <section>
-          <h1>Seed nano tech...</h1>
-        </section>
-      </div>
-
-      {/* TODO : Other Page */}
-      <div className="w-full h-screen ">
-        <section>
-          <h1>Seed nano tech...</h1>
-        </section>
-      </div>
-
-      {/* TODO : Other Page */}
-      <div className="w-full h-screen ">
-        <section>
-          <h1>Seed nano tech...</h1>
-        </section>
-      </div>
-    </main>
+        <Navigation />
+      </main>
+    </>
   );
 }
