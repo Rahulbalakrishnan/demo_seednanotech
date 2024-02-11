@@ -4,7 +4,10 @@ export default function Page() {
       className="w-full min-h-screen flex flex-col bg-cover"
       style={{ backgroundImage: 'url("/Image/site-bg.jpg")' }}
     >
-      
+
+     <div>
+        <h1>Contact Page</h1>
+      </div> 
     </main>
   );
 }

@@ -4,24 +4,28 @@ import { Tabs as tabs } from "../../constants/";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import { XCircleIcon } from "@heroicons/react/16/solid";
 
 export default function TopNavigation() {
   const pathname = usePathname();
-  const [tabSelected, setTabSelected] = useState("Home");
+
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  const handleTabClick = (tab: string) => {
-    setTabSelected(tab);
-
-    if (window.innerWidth <= 900) {
-      setIsDrawerOpen(false);
-    }
-  };
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
+  const handleDrawerTabClick = (tab: string) => {
+    // Close drawer if the clicked tab is already selected
+    if (tab === pathname) {
+      setIsDrawerOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Close drawer when the route changes
+    setIsDrawerOpen(false);
+  }, [pathname]);
   return (
     <>
       <nav className="fixed w-full" style={{ userSelect: "none" }}>
@@ -64,25 +68,38 @@ export default function TopNavigation() {
               );
             })}
           </div>
+
           {isDrawerOpen && (
             <div
-              className="lg:hidden flex flex-col absolute top-0 left-0 w-full h-screen p-4  shadow-md "
+              className="lg:hidden flex flex-col absolute top-0 left-0 w-full h-screen items-center pt-10 shadow-md "
               style={{ backgroundImage: 'url("/Image/site-bg.jpg")' }}
             >
-              {tabs.map((tab) => (
-                <a
-                  key={tab.name}
-                  href={tab.href}
-                  onClick={() => handleTabClick(tab.name)}
-                  className={`py-2 ${
-                    tabSelected === tab.name
-                      ? "  text-accent font-bold "
-                      : "text-gradient "
-                  }`}
-                >
-                  {tab.name}
-                </a>
-              ))}
+              {tabs.map((tab) => {
+                return (
+                  <Link
+                    key={tab.name}
+                    href={tab.href}
+                    onClick={() => handleDrawerTabClick(tab.href)}
+                    className={clsx("px-1 rounded text-1xl p-1 ", {
+                      "text-gradient": pathname !== tab.href,
+                      "text-accent font-bold border-2 border-accent shadow-md":
+                        pathname === tab.href,
+                    })}
+                  >
+                    {tab.name}
+                  </Link>
+                );
+              })}
+
+              <XCircleIcon
+                style={{
+                  color: "#9333EA",
+                  width: "1.5rem",
+                  height: "1.5rem",
+                  marginTop: "0.5rem",
+                }}
+                onClick={toggleDrawer}
+              />
             </div>
           )}
         </div>
