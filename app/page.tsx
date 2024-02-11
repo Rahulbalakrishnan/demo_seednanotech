@@ -1,11 +1,10 @@
 "use client";
 
 import Landing from "./ui/components/landing";
-import BottomNavigation from "./ui/navigation/bottomNavigation";
-import TopNavigation from "./ui/navigation/topNavigation";
-import { useRouter } from "next/router";
+import BottomNavigation from "./navigation/bottomNavigation";
+import TopNavigation from "./navigation/topNavigation";
+
 export default function Home() {
-  
   return (
     <>
       <main
