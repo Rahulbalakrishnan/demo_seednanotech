@@ -1,4 +1,4 @@
-import Navigation from "../navigation/navigation";
+import Navigation from "../navigation/bottomNavigation";
 import Blogs from "./landing/blogs";
 import Contact from "./landing/contact";
 import Product from "./landing/product";
