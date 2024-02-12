@@ -32,11 +32,11 @@ export default function TopNavigation() {
         <div className="flex mx-8 my-2 justify-between items-center">
           {/* Company logo */}
           <div className="items-center cursor-pointer">
-            <h1 className="text-gradient btn-link text-1xl sm: text-2xl md:text-2xl lg:text-2xl xl:text-2xl">
-              Seed NanoTech
+            <h1 className="text-gradient btn-link text-1xl  sm: text-2xl md:text-2xl lg:text-2xl xl:text-2xl">
+              <Link href="/">Seed NanoTech</Link>
             </h1>
-            <h3 className=" text-gradient btn-link  text-1xl">
-              International Inc.
+            <h3 className=" text-gradient btn-link  text-sm ">
+              <Link href="/">International Inc.</Link>
             </h3>
           </div>
 
@@ -94,9 +94,9 @@ export default function TopNavigation() {
               <XCircleIcon
                 style={{
                   color: "#9333EA",
-                  width: "1.5rem",
-                  height: "1.5rem",
-                  marginTop: "0.5rem",
+                  width: "2.0rem",
+                  height: "2.0rem",
+                  marginTop: "1.0rem",
                 }}
                 onClick={toggleDrawer}
               />

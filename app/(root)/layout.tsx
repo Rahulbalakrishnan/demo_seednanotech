@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import TopNavigation from "../navigation/topNavigation";
+import { BoltSlashIcon } from "@heroicons/react/24/solid";
+import BottomNavigation from "../navigation/bottomNavigation";
 
 const inter = Inter({ subsets: ["latin"] });
 

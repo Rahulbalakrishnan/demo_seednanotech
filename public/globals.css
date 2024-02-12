@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @media (max-width: 640px) {
   .hide-xs-sm {
     display: none;
@@ -99,16 +98,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+  overflow-y: scroll;
 }
+
+body::-webkit-scrollbar {
+  width: 0.0px;
+}
+
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
-
-
-
-
-
-
