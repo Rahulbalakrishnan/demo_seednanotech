@@ -17,7 +17,7 @@ export default function BottomNavigation() {
           <a
             key={index}
             className={`cursor-pointer w-[18px] h-[18px] flex items-center justify-center focus:outline-none ${
-              activeSection === section ? "text-purple-600" : "text-white/50"
+              activeSection === section ? "text-purple-500" : "text-white"
             }`}
             onClick={() => handleItemClick(section)}
           >

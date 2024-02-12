@@ -99,12 +99,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 
-  overflow-y: scroll;
+   overflow-y: scroll;
+  
 }
 
-body::-webkit-scrollbar {
+ body::-webkit-scrollbar {
   width: 0.0px;
-}
+} 
 
 
 

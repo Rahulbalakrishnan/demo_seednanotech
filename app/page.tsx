@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <main
         className="w-full min-h-screen flex flex-col bg-cover"
-        style={{ backgroundImage: 'url("/Image/site-bg.jpg")' }}
+        style={{ backgroundColor: "#FEFBF6" }}
       >
         <TopNavigation />
         <Landing />

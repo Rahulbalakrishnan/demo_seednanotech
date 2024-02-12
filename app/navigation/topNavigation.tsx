@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { XCircleIcon } from "@heroicons/react/16/solid";
+import * as str from "../constants/strings.js";
+import Image from "next/image";
 
 export default function TopNavigation() {
   const pathname = usePathname();
@@ -31,13 +33,23 @@ export default function TopNavigation() {
       <nav className="fixed w-full" style={{ userSelect: "none" }}>
         <div className="flex mx-8 my-2 justify-between items-center">
           {/* Company logo */}
-          <div className="items-center cursor-pointer">
-            <h1 className="text-gradient btn-link text-1xl  sm: text-2xl md:text-2xl lg:text-2xl xl:text-2xl">
-              <Link href="/">Seed NanoTech</Link>
-            </h1>
-            <h3 className=" text-gradient btn-link  text-sm ">
-              <Link href="/">International Inc.</Link>
-            </h3>
+          <div className="flex ">
+            <Image
+              src={"/Image/toplogo.png"}
+              alt="logo icon"
+              width={50}
+              height={25}
+              className="mt-1"
+            />
+
+            <div className=" px-2 items-center cursor-pointer">
+              <h1 className="text-gradient btn-link text-1xl  sm: text-2xl md:text-2xl lg:text-2xl xl:text-2xl">
+                <Link href="/">{str.COMPANY_NAME}</Link>
+              </h1>
+              <h3 className=" text-gradient btn-link  text-sm ">
+                <Link href="/">{str.COMPANY_NAME_SUB}</Link>
+              </h3>
+            </div>
           </div>
 
           {/* Hamburger icon for small screens */}
@@ -49,7 +61,7 @@ export default function TopNavigation() {
 
           {/* Company tabs */}
           <div
-            className={`lg:flex hidden text-gradient space-x-10 cursor-pointer ${
+            className={`lg:flex hidden  text-gradient space-x-8 cursor-pointer ${
               isDrawerOpen ? "flex" : "hidden"
             }`}
           >
@@ -60,7 +72,8 @@ export default function TopNavigation() {
                   href={tab.href}
                   className={clsx("px-1 rounded border-2 ", {
                     "border-transparent": pathname !== tab.href,
-                    "text-accent border-accent border-2": pathname === tab.href,
+                    "text-accent font-extrabold border-accent border-2":
+                      pathname === tab.href,
                   })}
                 >
                   {tab.name}
@@ -71,8 +84,8 @@ export default function TopNavigation() {
 
           {isDrawerOpen && (
             <div
-              className="lg:hidden flex flex-col absolute top-0 left-0 w-full h-screen items-center pt-10 shadow-md "
-              style={{ backgroundImage: 'url("/Image/site-bg.jpg")' }}
+              className="lg:hidden bg-white flex flex-col absolute top-0 left-0 w-full h-screen items-center pt-20 shadow-md "
+              style={{ backgroundImage: 'url("/Image/bg-main.jpg")'}}
             >
               {tabs.map((tab) => {
                 return (
@@ -80,7 +93,7 @@ export default function TopNavigation() {
                     key={tab.name}
                     href={tab.href}
                     onClick={() => handleDrawerTabClick(tab.href)}
-                    className={clsx("px-1 rounded text-1xl p-1 ", {
+                    className={clsx("px-1 rounded text-1xl p-1 mt-5", {
                       "text-gradient": pathname !== tab.href,
                       "text-accent font-bold border-2 border-accent shadow-md":
                         pathname === tab.href,
