@@ -28,7 +28,7 @@ export default function Welcome() {
               className="rounded-full  bg-transparent border-2 shadow-2xl border-purple-600 "
             />
           </div>
-          <div id="social_details" className="flex  flex-col items-center sm:items-start ">
+          <div id="social_details" className="flex  flex-col items-center sm:items-start sm:ps-3 ">
             <div id="social_icons" className="flex  pt-4 ">
               {socialIcons.map((icon, index) => (
                 <a

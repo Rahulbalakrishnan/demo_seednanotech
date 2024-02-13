@@ -72,7 +72,7 @@ export default function TopNavigation() {
                   href={tab.href}
                   className={clsx("px-1 rounded border-2 ", {
                     "border-transparent": pathname !== tab.href,
-                    "text-accent font-extrabold border-accent border-2":
+                    "text-gradient font-extrabold border-r-accent border-t-accent border-b-purple-900 border-l-purple-900 border-2":
                       pathname === tab.href,
                   })}
                 >
@@ -94,7 +94,7 @@ export default function TopNavigation() {
                     href={tab.href}
                     onClick={() => handleDrawerTabClick(tab.href)}
                     className={clsx("px-1 rounded text-3xl p-1 mt-5", {
-                      "text-gradient": pathname !== tab.href,
+                      "text-gradient ": pathname !== tab.href,
                       "text-accent font-bold border-2 border-accent shadow-md":
                         pathname === tab.href,
                     })}
