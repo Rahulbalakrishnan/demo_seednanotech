@@ -6,7 +6,7 @@ import {
   PencilSquareIcon,
   WrenchScrewdriverIcon,
 } from "@heroicons/react/24/solid";
-import * as str from "../constants/strings.js";
+import * as str from "./strings.js";
 
 export const Tabs = [
   { name: str.HOME, href: str.HOME_ROUTE },

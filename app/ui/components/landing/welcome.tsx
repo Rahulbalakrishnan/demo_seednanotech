@@ -13,12 +13,13 @@ export default function Welcome() {
         userSelect: "none",
       }}
     >
-      <section
-        id="Welcome"
-        className="pt-32  sm:pt-40 md:pt-20 lg:pt-20 w-full "
-      >
-        <div className=" flex flex-col p-14  text-white ">
-          <div className="flex pt-8 ps-0">
+      {/* Welcome page */}
+      <section id="Welcome" className="pt-32  w-full  ">
+        <div
+          id="container"
+          className="flex flex-col items-center pt-10 sm:items-start sm:ps-8"
+        >
+          <div id="image" className="flex">
             <Image
               src={"/Image/logo.jpg"}
               width={250}
@@ -27,45 +28,50 @@ export default function Welcome() {
               className="rounded-full  bg-transparent border-2 shadow-2xl border-purple-600 "
             />
           </div>
+          <div id="social_details" className="ps-5">
+            <div id="social_icons" className="flex pt-4 ">
+              {socialIcons.map((icon, index) => (
+                <a
+                  key={index}
+                  href={icon.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={icon.src}
+                    alt={icon.alt}
+                    width={20}
+                    height={20}
+                    className="w-8 h-8 mx-1"
+                  />
+                </a>
+              ))}
+            </div>
 
-          <div className="flex px-4 pt-4">
-            {socialIcons.map((icon, index) => (
-              <a
-                key={index}
-                href={icon.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={icon.src}
-                  alt={icon.alt}
-                  width={20}
-                  height={20}
-                  className="mx-2  sm:w-8 sm:h-8"
-                />
-              </a>
-            ))}
-          </div>
-
-          <div className="flex flex-col ps-6  pt-4">
-            <div className="flex">
+            <div
+              id="gmail"
+              className="flex pt-2 ps-1 text-white font-semibold text-lg"
+            >
               <Image
                 src={str.GMAIL_ICON}
                 alt={str.GMAIL_ALT}
                 width={20}
                 height={20}
               />
-              <a className="px-2 text-lg">{str.GMAIL_ID}</a>
+              <a className="ps-2">{str.GMAIL_ID}</a>
             </div>
 
-            <div className="flex">
+            <div
+              id="phone"
+              className="ps-1 flex text-white  font-semibold text-lg"
+            >
               <Image
                 src={str.MOBILE_ICON}
                 alt={str.MOBILE_ALT}
                 width={20}
                 height={20}
               />
-              <a className="ps-2 font-light">{str.MOBILE_NO}</a>
+              <a className="ps-2">{str.MOBILE_NO}</a>
             </div>
           </div>
         </div>

@@ -52,3 +52,5 @@ export const GMAIL_ALT = "Gmail icon";
 export const MOBILE_NO = "+1 (905) 452 5200";
 export const MOBILE_ICON = "/Image/social_icons/phone.svg";
 export const MOBILE_ALT = "Phone icon";
+
+
