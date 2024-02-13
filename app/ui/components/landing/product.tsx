@@ -16,13 +16,13 @@ export default function Product() {
           id="main_product_div"
           className="flex flex-col lg:flex-row lg:justify-between"
         >
-          {}
+        
           <div id="content_div" className="flex flex-col">
             {productDetails.map((product, index) => (
-              <div id="bqp" className="lg:py-2">
+              <div key={index} id="main_div" className="lg:py-2">
                 <h1 className="lg:text-lg">{product.title}</h1>
                 <div className="font-light">
-                  <ul key={index} className="list-disc ps-4 font-thin">
+                  <ul className="list-disc ps-4 font-thin">
                     <li key={product.firstData[1]}>{product.firstData[0]}</li>
                     <li key={product.secondData[1]}>{product.secondData[0]}</li>
                   </ul>
@@ -36,7 +36,7 @@ export default function Product() {
             >
               {str.BTN_ONE}
             </Link>
-            {/* <a className="text-gradient ps-4 lg:text-lg">{str.BTN_ONE}</a> */}
+            
           </div>
 
           <div id="video_div" className="flex flex-col  pt-1  ">
