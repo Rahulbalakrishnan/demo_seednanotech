@@ -30,6 +30,7 @@ export default function Product() {
               </div>
             ))}
             <Link
+              key={"product_key"}
               href={str.PRODUCTS_ROUTE}
               className="text-gradient ps-4 lg:text-lg"
             >
