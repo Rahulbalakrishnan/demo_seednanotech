@@ -44,6 +44,7 @@ export default function Product() {
                 <YoutubePlayer ht={190} wd={300} />
                 <div className="pt-2">
                   <Link
+                    key={"small_key"}
                     href={str.YT_HREF}
                     target="_blank"
                     className="text-gradient ps-4 lg:text-lg"
@@ -57,6 +58,7 @@ export default function Product() {
                 <YoutubePlayer ht={315} wd={600} />
                 <div className="pt-2">
                   <Link
+                    key={"large_key"}
                     href={str.YT_HREF}
                     target="_blank"
                     className="text-gradient ps-4 lg:text-lg"
