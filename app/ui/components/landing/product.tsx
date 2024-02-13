@@ -4,7 +4,7 @@ export default function Product() {
   return (
     <div className="w-full h-screen">
       <section id="Product" className="pt-12 px-8 text-white">
-        <div className="flex text-gradient text-lg font-bold pt-5">
+        <div className="flex text-gradient text-lg font-bold pt-7">
           <h1>PRODUCTS CLASSIFICATION</h1>
         </div>
 
@@ -54,7 +54,7 @@ export default function Product() {
                 <YoutubePlayer ht={200} wd={200} />
               </div>
             </div>
-            <a className="text-gradient pt-1">Learn more...</a>
+            <a className="text-gradient pt-2">Learn more...</a>
           </div>
         </div>
       </section>
