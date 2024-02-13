@@ -7,10 +7,11 @@ interface videoType {
 
 export default function YoutubePlayer({ ht, wd }: videoType) {
   const videoOptions = {
-    width: ht,
-    height: wd,
+    width: wd,
+    height: ht,
     playerVars: {
-      autoplay: 0,
+      autoplay: 1,
+      mute: 1,
     },
   };
 

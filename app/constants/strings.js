@@ -1,4 +1,4 @@
-import { EXPORT_DETAIL } from "next/dist/shared/lib/constants";
+
 
 export const COMPANY_NAME = "Seed NanoTech";
 export const COMPANY_NAME_SUB = "International Inc.";
@@ -14,7 +14,7 @@ export const CONTACT = "Contact";
 
 export const HOME_ROUTE = "/";
 export const PRODUCTS_ROUTE = "/products";
-export const RESOURCES_ROUTE = "/resourcez";
+export const RESOURCES_ROUTE = "/resourcez"; // intentionally named it as "resourcez"
 export const ABOUT_ROUTE = "/about";
 export const GALLERY_ROUTE = "/gallery";
 export const CONFERENCE_ROUTE = "/conference";
@@ -53,4 +53,23 @@ export const MOBILE_NO = "+1 (905) 452 5200";
 export const MOBILE_ICON = "/Image/social_icons/phone.svg";
 export const MOBILE_ALT = "Phone icon";
 
+export const PRODUCT_SEC_HEADER = "PRODUCTS CLASSIFICATION";
+export const BTN_ONE = "Read more...";
+export const BTN_TWO = "Learn more...";
 
+
+// Biotechnology & Quantum Photonics
+export const BIO_TECH_TITLE = "Biotechnology & Quantum Photonics";
+export const BIO_TECH_FIRST_DATA = "Biosensor Technology – A Game Changer";
+export const BIO_TECH_SECOND_DATA =
+  "Early disease detection – SPR, Quantum, Optical Sensors & AI";
+
+// Environmental Protection & Meteorology
+export const ENV_PROTECTION_TITLE = "Environmental Protection & Meteorology";
+export const ENV_PROTECTION_FIRST_DATA = "NO2, Humidity Sensors & AI";
+export const ENV_PROTECTION_SECOND_DATA = "Magneto-optical Sensors";
+
+// Agriculture & Food Protection
+export const AGRI_FOOD_TITLE = "Agriculture & Food Protection";
+export const AGRI_FOOD_FIRST_DATA = "Pesticide Detection & Optics";
+export const AGRI_FOOD_SECOND_DATA = "Chemical & Contamination Detection";

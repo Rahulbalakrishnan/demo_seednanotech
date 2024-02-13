@@ -1,60 +1,71 @@
 import YoutubePlayer from "@/app/lib/videoPlayer";
+import { ProductDetails as productDetails } from "@/app/constants";
+import * as str from "../../../constants/strings";
+import Link from "next/link";
 
 export default function Product() {
   return (
-    <div className="w-full h-screen">
-      <section id="Product" className="pt-12 px-8 text-white">
-        <div className="flex text-gradient text-lg font-bold pt-7">
-          <h1>PRODUCTS CLASSIFICATION</h1>
+    <div className="w-full h-screen" style={{ userSelect: "none" }}>
+      <section id="Product" className=" pt-12 px-8 text-white">
+        <div className=" text-gradient text-lg font-bold pt-9 ">
+          <h1 className=" md:items-center lg:pb-8 lg:text-2xl lg:pt-5">
+            {str.PRODUCT_SEC_HEADER}
+          </h1>
         </div>
-
-        <div id="main_product_div" className="flex flex-col md:flex-row md:justify-between">
+        <div
+          id="main_product_div"
+          className="flex flex-col lg:flex-row lg:justify-between"
+        >
+          {}
           <div id="content_div" className="flex flex-col">
-            <div id="bqp" className="">
-              <h1 className="">Biotechnology & Quantum Photonics</h1>
-              <div className="font-light">
-                <ul className="list-disc ps-4 font-thin">
-                  <li>Biosensor Technology – A Game Changer</li>
-                  <li>
-                    Early disease detection – SPR, Quantum, Optical Sensors & AI
-                  </li>
-                </ul>
+            {productDetails.map((product, index) => (
+              <div id="bqp" className="lg:py-2">
+                <h1 className="lg:text-lg">{product.title}</h1>
+                <div className="font-light">
+                  <ul key={index} className="list-disc ps-4 font-thin">
+                    <li key={product.firstData[1]}>{product.firstData[0]}</li>
+                    <li key={product.secondData[1]}>{product.secondData[0]}</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-
-            <div id="epm" className="">
-              <h1 className="">Environmental Protection & Meteorology</h1>
-              <div className="font-light">
-                <ul className="list-disc ps-4 font-thin">
-                  <li>NO2, Humidity Sensors & AI</li>
-                  <li>Magneto-optical Sensors</li>
-                </ul>
-              </div>
-            </div>
-
-            <div id="afp" className="">
-              <h1 className=" ">Agriculture & Food Protection </h1>
-              <div className="font-light">
-                <ul className="list-disc ps-4 font-thin">
-                  <li>Pesticide Detection & Optics</li>
-                  <li>Chemical & Contamination Detection</li>
-                </ul>
-              </div>
-            </div>
-
-            <a className="text-gradient">Read more...</a>
+            ))}
+            <Link
+              href={str.PRODUCTS_ROUTE}
+              className="text-gradient ps-4 lg:text-lg"
+            >
+              {str.BTN_ONE}
+            </Link>
+            {/* <a className="text-gradient ps-4 lg:text-lg">{str.BTN_ONE}</a> */}
           </div>
 
-          <div id="video_div" className="flex flex-col  items-start pt-2 pb-1">
-            <div id="video_and_btn " className="flex ">
-              <div
-                id="videoframe"
-                className=" border-2 border-white relative overflow-hidden h-48 w-52 "
-              >
-                <YoutubePlayer ht={200} wd={200} />
+          <div id="video_div" className="flex flex-col  pt-1  ">
+            <div id="video_and_btn " className="">
+              <div className="block lg:hidden">
+                <YoutubePlayer ht={190} wd={300} />
+                <div className="pt-2">
+                  <Link
+                    href={str.YT_HREF}
+                    target="_blank"
+                    className="text-gradient ps-4 lg:text-lg"
+                  >
+                    {str.BTN_TWO}
+                  </Link>
+                </div>
+              </div>
+
+              <div className="hidden lg:block ">
+                <YoutubePlayer ht={315} wd={600} />
+                <div className="pt-2">
+                  <Link
+                    href={str.YT_HREF}
+                    target="_blank"
+                    className="text-gradient ps-4 lg:text-lg"
+                  >
+                    {str.BTN_TWO}
+                  </Link>
+                </div>
               </div>
             </div>
-            <a className="text-gradient pt-2">Learn more...</a>
           </div>
         </div>
       </section>
