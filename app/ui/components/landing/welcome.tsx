@@ -28,8 +28,8 @@ export default function Welcome() {
               className="rounded-full  bg-transparent border-2 shadow-2xl border-purple-600 "
             />
           </div>
-          <div id="social_details" className="ps-5">
-            <div id="social_icons" className="flex pt-4 ">
+          <div id="social_details" className="flex  flex-col items-center sm:items-start ">
+            <div id="social_icons" className="flex  pt-4 ">
               {socialIcons.map((icon, index) => (
                 <a
                   key={index}
@@ -50,7 +50,7 @@ export default function Welcome() {
 
             <div
               id="gmail"
-              className="flex pt-2 ps-1 text-white font-semibold text-lg"
+              className="flex pt-2  text-white font-semibold text-lg sm:ps-1"
             >
               <Image
                 src={str.GMAIL_ICON}
@@ -63,7 +63,7 @@ export default function Welcome() {
 
             <div
               id="phone"
-              className="ps-1 flex text-white  font-semibold text-lg"
+              className=" flex text-white  font-semibold text-lg sm:ps-1"
             >
               <Image
                 src={str.MOBILE_ICON}

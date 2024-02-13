@@ -93,7 +93,7 @@ export default function TopNavigation() {
                     key={tab.name}
                     href={tab.href}
                     onClick={() => handleDrawerTabClick(tab.href)}
-                    className={clsx("px-1 rounded text-1xl p-1 mt-5", {
+                    className={clsx("px-1 rounded text-3xl p-1 mt-5", {
                       "text-gradient": pathname !== tab.href,
                       "text-accent font-bold border-2 border-accent shadow-md":
                         pathname === tab.href,
@@ -107,8 +107,8 @@ export default function TopNavigation() {
               <XCircleIcon
                 style={{
                   color: "#9333EA",
-                  width: "2.0rem",
-                  height: "2.0rem",
+                  width: "2.5rem",
+                  height: "2.5rem",
                   marginTop: "1.0rem",
                 }}
                 onClick={toggleDrawer}
