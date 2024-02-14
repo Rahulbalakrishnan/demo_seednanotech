@@ -30,7 +30,7 @@ export default function TopNavigation() {
   }, [pathname]);
   return (
     <>
-      <nav className="fixed w-full" style={{ userSelect: "none" }}>
+      <nav className="fixed w-full z-50" style={{ userSelect: "none" }}>
         <div className="flex mx-4 my-2 justify-between items-center">
           {/* Company logo */}
           <div className="flex ">

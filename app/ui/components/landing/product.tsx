@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function Product() {
   return (
-    <div className="w-full h-screen" style={{ userSelect: "none" }}>
+    <div className="w-full h-screen " style={{ userSelect: "none" }}>
       <section id="Product" className=" pt-12 px-8 text-white">
         <div className=" text-gradient text-lg font-bold pt-9 ">
-          <h1 className="pb-2 md:items-center  lg:pb-8 lg:text-2xl lg:pt-5">
+          <h1 className=" z-10 pb-2 md:items-center  lg:pb-8 lg:text-2xl lg:pt-5">
             {str.PRODUCT_SEC_HEADER}
           </h1>
         </div>

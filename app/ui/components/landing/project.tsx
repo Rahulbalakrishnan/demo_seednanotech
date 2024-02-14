@@ -22,15 +22,15 @@ export default function Project() {
     },
   ];
   return (
-    <div className="w-full h-screen" style={{ userSelect: "none" }}>
+    <div className="w-full h-screen " style={{ userSelect: "none" }}>
       <section id="Project" className=" pt-12 px-8 text-white">
         <div className=" text-gradient text-lg font-bold pt-9 ">
-          <h1 className="pb-4 md:items-center  lg:pb-8 lg:text-2xl lg:pt-5">
+          <h1 className="z-10 pb-4 md:items-center  lg:pb-8 lg:text-2xl lg:pt-5">
             PROJECT PORTFOLIO
           </h1>
         </div>
 
-        <div id="Main_project_div" className="">
+        <div id="Main_project_div" className="flex flex-col ">
           {/* groups  */}
           <div id="groups" className="flex flex-col md:flex-row ">
             {/* item */}
@@ -39,28 +39,32 @@ export default function Project() {
               <div
                 key={index}
                 id="item"
-                className="flex flex-col py-4 md:px-2 md:pt-24 lg:pt-16 lg:mx-10 "
+                className="flex flex-col py-2 md:px-2 md:pt-24 lg:pt-16 lg:mx-10 "
               >
                 {/* Lower than xl size contianer - start */}
                 <div
                   className="xl:hidden flex flex-col border-4 border-accent transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer hover:group-hover"
                   style={{ maxWidth: "300px", width: "100%" }}
                 >
-                  <div className="bg-black/70 w-full h-full absolute z-40 transition-all duration-300 "></div>
+                  <div className="bg-black/70 w-full h-full absolute z-10 transition-all duration-300 "></div>
                   <Image
                     src={projectDetail.src}
                     alt={projectDetail.alt}
                     width={300}
                     height={10}
-                    className="h-45 cursor-pointer scale-10 object-cover transition-all duration-500"
+                    className="h-40 cursor-pointer scale-10 object-cover transition-all duration-500"
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "center center",
+                    }}
                   />
 
-                  <div className="flex absolute bottom-20 transition-all duration-500 z-50">
+                  <div className="flex absolute bottom-20 transition-all duration-500 z-20">
                     <h1 className="text-gradient font-bold text-lg px-4 transition-all duration-500 transform group-hover:translate-y-[-50%] ">
                       {projectDetail.title}
                     </h1>
                   </div>
-                  <div className="absolute bottom-12 transition-all duration-700 z-50">
+                  <div className="absolute bottom-12 transition-all duration-700 z-20">
                     <h1 className="text-sm font-normal text-start px-4 text-white transition-all duration-500 transform group-hover:translate-y-[-30%]">
                       {projectDetail.content}
                     </h1>
@@ -74,7 +78,7 @@ export default function Project() {
                   className="xl:block hidden border-4 border-accent  transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer hover:group-hover"
                   style={{ maxWidth: "500px", width: "100%" }}
                 >
-                  <div className="bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                  <div className="bg-black/70 w-full h-full absolute z-10 transition-all duration-300"></div>
 
                   <Image
                     src={projectDetail.src}
@@ -82,20 +86,25 @@ export default function Project() {
                     width={400}
                     height={100}
                     className="h-66 cursor-pointer scale-10 object-cover transition-all duration-500"
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "center center",
+                    }}
                   />
 
-                  <div className="absolute  left-12 bottom-28 transition-all duration-500 z-50">
+                  <div className="absolute  left-12 bottom-28 transition-all duration-500 z-20">
                     <h1 className="text-gradient font-bold text-lg  transition-all duration-500 transform group-hover:translate-y-[-50%]">
                       {projectDetail.title}
                     </h1>
                   </div>
 
-                  <div className="absolute left-12  bottom-20 transition-all duration-700 z-50">
+                  <div className="absolute left-12  bottom-20 transition-all duration-700 z-20">
                     <h1 className="text-sm font-normal   text-white transition-all duration-500 transform group-hover:translate-y-[-30%]">
                       {projectDetail.content}
                     </h1>
                   </div>
                 </div>
+
                 {/* Higher than xl size container - end */}
               </div>
             ))}
