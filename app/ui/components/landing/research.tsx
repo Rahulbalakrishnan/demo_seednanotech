@@ -1,32 +1,15 @@
 import Image from "next/image";
+import * as str from "../../../constants/strings";
+import { ResDetails as resDetails } from "@/app/constants";
 
 export default function Research() {
-  const resDetails = [
-    {
-      src: "/Assets/Images/Images_research/res_item1.jpg",
-      alt: "item1",
-      title: "Magneto-Optics:",
-      content: "functionalities – next generation technologies.",
-    },
-    {
-      src: "/Assets/Images/Images_research/res_item2.jpg",
-      alt: "item2",
-      title: "Nano-Fabrication:",
-      content: "Nano-Fabrication, Leading to new technologies.",
-    },
-    {
-      src: "/Assets/Images/Images_research/res_item3.jpg",
-      alt: "item3",
-      title: "Modified SPR:",
-      content: "Modified SPR phenomena leading to new devices.",
-    },
-  ];
+  
   return (
     <div className="w-full h-screen " style={{ userSelect: "none" }}>
       <section id="Research" className=" pt-12 px-8 text-white">
         <div className=" text-gradient text-lg font-bold pt-9 ">
           <h1 className="z-10 pb-5 md:items-center lg:text-2xl lg:pb-8  lg:pt-5">
-            APPLIED RESEARCH, INNOVATION, AND PROTOTYPE ENGINEERING
+            {str.RES_SEC_HEADER}
           </h1>
         </div>
 

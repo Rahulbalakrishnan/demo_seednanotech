@@ -1,11 +1,8 @@
-
-
 export const COMPANY_NAME = "Seed NanoTech";
 export const COMPANY_NAME_SUB = "International Inc.";
 export const COMPANY_NAME_FULL = "Seed NanoTech International Inc";
-export const COMPANY_LOGO ="/Assets/Icons/toplogo.png"
-export const COMPANY_LOGO_MAIN="/Assets/Icons/logo.jpg"
-
+export const COMPANY_LOGO = "/Assets/Icons/toplogo.png";
+export const COMPANY_LOGO_MAIN = "/Assets/Icons/logo.jpg";
 
 export const HOME = "Home";
 export const PRODUCTS = "Products";
@@ -29,7 +26,6 @@ export const PROJECT_SECTION = "Project";
 export const BLOGS_SECTION = "Blogs";
 export const RESEARCH_SECTION = "Research";
 export const CONTACT_SECTION = "Contact";
-
 
 export const FB_SRC = "/Assets/Icons/Icon_social/fb.svg";
 export const FB_ALT = "facebook icon";
@@ -61,19 +57,77 @@ export const PRODUCT_SEC_HEADER = "PRODUCTS CLASSIFICATION";
 export const BTN_ONE = "Read more...";
 export const BTN_TWO = "Learn more...";
 
-
-// Biotechnology & Quantum Photonics
 export const BIO_TECH_TITLE = "Biotechnology & Quantum Photonics";
 export const BIO_TECH_FIRST_DATA = "Biosensor Technology – A Game Changer";
 export const BIO_TECH_SECOND_DATA =
   "Early disease detection – SPR, Quantum, Optical Sensors & AI";
 
-// Environmental Protection & Meteorology
 export const ENV_PROTECTION_TITLE = "Environmental Protection & Meteorology";
 export const ENV_PROTECTION_FIRST_DATA = "NO2, Humidity Sensors & AI";
 export const ENV_PROTECTION_SECOND_DATA = "Magneto-optical Sensors";
 
-// Agriculture & Food Protection
 export const AGRI_FOOD_TITLE = "Agriculture & Food Protection";
 export const AGRI_FOOD_FIRST_DATA = "Pesticide Detection & Optics";
 export const AGRI_FOOD_SECOND_DATA = "Chemical & Contamination Detection";
+
+export const PROJECT_SEC_HEADER = "PROJECT PORTFOLIO";
+
+export const PD_BIO_SRC = "/Assets/Images/Images_project/project_item1.jpg";
+export const PD_BIO_ALT = "item1";
+export const PD_BIO_TITLE = "Bio-sensor:";
+export const PD_BIO_CONTENT =
+  "Improved Bio-sensor: Magneto-optics is on the rise.";
+
+export const PD_MICRO_SRC = "/Assets/Images/Images_project/project_item2.jpg";
+export const PD_MICRO_ALT = "item2";
+export const PD_MICRO_TITLE = "Micro-structure:";
+export const PD_MICRO_CONTENT =
+  "Where Micro-structure matters in magneto-optics sensing.";
+
+export const PD_LIMITS_SRC = "/Assets/Images/Images_project/project_item3.jpg";
+export const PD_LIMITS_ALT = "item3";
+export const PD_LIMITS_TITLE = "Limits:";
+export const PD_LIMITS_CONTENT =
+  "Where sensitivity and detection limit, reach their limits.";
+
+export const BLOG_SEC_HEADER = " LATEST BLOGS";
+export const BLOG_SEC_BTN_TEXT = "View All";
+
+export const PD_FUTURE_SRC = "/Assets/Images/Images_blogs/blog_item1.png";
+export const PD_FUTURE_ALT = "item1";
+export const PD_FUTURE_TITLE = "The Future of Nano sensors:";
+export const PD_FUTURE_CONTENT =
+  "Revolutionizing data collection and analysis.";
+
+export const PD_ATTENDING_SRC = "/Assets/Images/Images_blogs/blog_item2.png";
+export const PD_ATTENDING_ALT = "item2";
+export const PD_ATTENDING_TITLE = "5 Benefits you get attending:";
+export const PD_ATTENDING_CONTENT =
+  "International conferences of technology and management.";
+
+export const PD_SENSORS_SRC = "/Assets/Images/Images_blogs/blog_item3.png";
+export const PD_SENSORS_ALT = "item3";
+export const PD_SENSORS_TITLE = "Resonance/SPR sensors:";
+export const PD_SENSORS_CONTENT =
+  "Advantages of surface plasmon resonance/spr sensors in Brampton.";
+
+export const RES_SEC_HEADER =
+  "APPLIED RESEARCH, INNOVATION, AND PROTOTYPE ENGINEERING";
+
+export const RD_MAGNETO_SRC = "/Assets/Images/Images_research/res_item1.jpg";
+export const PD_MAGNETO_ALT = "item1";
+export const RD_MAGNETO_TITLE = "Magneto-Optics:";
+export const RD_MAGNETO_CONTENT =
+  "functionalities – next generation technologies.";
+
+export const RD_NANO_SRC = "/Assets/Images/Images_research/res_item2.jpg";
+export const RD_NANO_ALT = "item2";
+export const RD_NANO_TITLE = "Nano-Fabrication:";
+export const RD_NANO_CONTENT = "Nano-Fabrication, Leading to new technologies.";
+
+export const RD_MODIFIED_SPR_SRC =
+  "/Assets/Images/Images_research/res_item3.jpg";
+export const RD_MODIFIED_SPR_ALT = "item3";
+export const RD_MODIFIED_SPR_TITLE = "Modified SPR:";
+export const RD_MODIFIED_SPR_CONTENT =
+  "Modified SPR phenomena leading to new devices.";

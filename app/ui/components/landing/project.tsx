@@ -1,32 +1,13 @@
 import Image from "next/image";
-
+import { ProjectDetails as projectDetails } from "@/app/constants";
+import * as str from "../../../constants/strings";
 export default function Project() {
-  const projectDetails = [
-    {
-      src: "/Assets/Images/Images_project/project_item1.jpg",
-      alt: "item1",
-      title: "Bio-sensor:",
-      content: "Improved Bio-sensor: Magneto-optics is on the rise.",
-    },
-    {
-      src: "/Assets/Images/Images_project/project_item2.jpg",
-      alt: "item2",
-      title: "Micro-structure:",
-      content: "Where Micro-structure matters in magneto-optics sensing.",
-    },
-    {
-      src: "/Assets/Images/Images_project/project_item3.jpg",
-      alt: "item3",
-      title: "Limits:",
-      content: "Where sensitivity and detection limit, reach their limits.",
-    },
-  ];
   return (
     <div className="w-full h-screen " style={{ userSelect: "none" }}>
       <section id="Project" className=" pt-12 px-8 text-white">
         <div className=" text-gradient text-lg font-bold pt-9 ">
           <h1 className="z-10 pb-5 md:items-center lg:text-2xl lg:pb-8  lg:pt-5">
-            PROJECT PORTFOLIO
+             {str.PROJECT_SEC_HEADER}
           </h1>
         </div>
 

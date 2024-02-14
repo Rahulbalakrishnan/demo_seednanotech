@@ -73,3 +73,67 @@ export const SocialIcons = [
     href: str.TR_HREF,
   },
 ];
+
+export const ProjectDetails = [
+  {
+    src: str.PD_BIO_SRC,
+    alt: str.PD_BIO_ALT,
+    title: str.PD_BIO_TITLE,
+    content: str.PD_BIO_CONTENT,
+  },
+  {
+    src: str.PD_MICRO_SRC,
+    alt: str.PD_MICRO_ALT,
+    title: str.PD_MICRO_TITLE,
+    content: str.PD_MICRO_CONTENT,
+  },
+  {
+    src: str.PD_LIMITS_SRC,
+    alt: str.PD_LIMITS_ALT,
+    title: str.PD_LIMITS_TITLE,
+    content: str.PD_LIMITS_CONTENT,
+  },
+];
+
+
+export const BlogDetails = [
+  {
+    src: str.PD_FUTURE_SRC,
+    alt: str.PD_FUTURE_ALT,
+    title: str.PD_FUTURE_TITLE,
+    content: str.PD_FUTURE_CONTENT,
+  },
+  {
+    src: str.PD_ATTENDING_SRC,
+    alt: str.PD_ATTENDING_ALT,
+    title: str.PD_ATTENDING_TITLE,
+    content: str.PD_ATTENDING_CONTENT,
+  },
+  {
+    src: str.PD_SENSORS_SRC,
+    alt: str.PD_SENSORS_ALT,
+    title: str.PD_SENSORS_TITLE,
+    content: str.PD_SENSORS_CONTENT,
+  },
+];
+
+export const ResDetails = [
+  {
+    src: str.RD_MAGNETO_SRC,
+    alt: str.RD_MAGNETO_ALT,
+    title: str.RD_MAGNETO_TITLE,
+    content: str.RD_MAGNETO_CONTENT,
+  },
+  {
+    src: str.RD_NANO_SRC,
+    alt: str.RD_NANO_ALT,
+    title: str.RD_NANO_TITLE,
+    content: str.RD_NANO_CONTENT,
+  },
+  {
+    src: str.RD_MODIFIED_SPR_SRC,
+    alt: str.RD_MODIFIED_SPR_ALT,
+    title: str.RD_MODIFIED_SPR_TITLE,
+    content: str.RD_MODIFIED_SPR_CONTENT,
+  },
+];

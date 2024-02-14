@@ -1,33 +1,14 @@
 import Image from "next/image";
-
+import { BlogDetails as blogDetails } from "@/app/constants";
+import * as str from "../../../constants/strings";
 export default function Blogs() {
-  const blogDetails = [
-    {
-      src: "/Assets/Images/Images_blogs/blog_item1.png",
-      alt: "item1",
-      title: "The Future of Nano sensors:",
-      content: "Revolutionizing data collection and analysis.",
-    },
-    {
-      src: "/Assets/Images/Images_blogs/blog_item2.png",
-      alt: "item2",
-      title: "5 Benefits you get attending:",
-      content: "International conferences of technology and management.",
-    },
-    {
-      src: "/Assets/Images/Images_blogs/blog_item3.png",
-      alt: "item3",
-      title: "Resonance/SPR sensors:",
-      content:
-        "Advantages of surface plasmon resonance/spr sensors in Brampton.",
-    },
-  ];
+  
   return (
     <div className="w-full h-screen" style={{ userSelect: "none" }}>
       <section id="Blogs" className=" pt-12 px-8 text-white">
         <div className=" text-gradient text-lg font-bold pt-9 ">
           <h1 className="z-10 pb-5 md:items-center  lg:pb-8 lg:text-2xl lg:pt-5">
-            LATEST BLOGS
+            {str.BLOG_SEC_HEADER}
           </h1>
         </div>
 
@@ -113,7 +94,7 @@ export default function Blogs() {
           </div>
           <div className="flex flex-col items-center py-2">
             <a className="border-2 border-accent btn px-4 py-1 cursor-pointer rounded-md text-sm items-center sm:text-lg md:text-xl">
-              View All
+              {str.BLOG_SEC_BTN_TEXT}
             </a>
           </div>
         </div>
