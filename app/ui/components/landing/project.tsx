@@ -39,71 +39,66 @@ export default function Project() {
               <div
                 key={index}
                 id="item"
-                className="flex flex-col py-2 md:px-2 md:pt-24 lg:pt-16 lg:mx-10 "
+                className="flex flex-col py-4 md:px-2 md:pt-24 lg:pt-16 lg:mx-10 "
               >
                 {/* Lower than xl size contianer - start */}
                 <div
-                  className=" xl:hidden flex flex-col border-4 border-accent transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer"
+                  className="xl:hidden flex flex-col border-4 border-accent transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer hover:group-hover"
                   style={{ maxWidth: "300px", width: "100%" }}
                 >
-                  <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                  <div className="bg-black/70 w-full h-full absolute z-40 transition-all duration-300 "></div>
                   <Image
                     src={projectDetail.src}
                     alt={projectDetail.alt}
                     width={300}
                     height={10}
-                    className=" h-40 cursor-pointer group-hover:scale-125 object-cover transition-all duration-500  "
+                    className="h-45 cursor-pointer scale-10 object-cover transition-all duration-500"
                   />
 
-                  <div
-                    id="item-content"
-                    className=" flex  absolute -bottom-full left-12 group-hover:bottom-20 transition-all duration-500 z-50"
-                  >
-                    <span className="text-gradient font-bold text-lg px-4 ">
+                  <div className="flex absolute bottom-20 transition-all duration-500 z-50">
+                    <h1 className="text-gradient font-bold text-lg px-4 transition-all duration-500 transform group-hover:translate-y-[-50%] ">
                       {projectDetail.title}
-                    </span>
+                    </h1>
                   </div>
-                  <div className="absolute -bottom-full left-12 group-hover:bottom-12  transition-all duration-700 z-50">
-                    <h1 className="text-sm font-normal text-start px-4  text-white">
+                  <div className="absolute bottom-12 transition-all duration-700 z-50">
+                    <h1 className="text-sm font-normal text-start px-4 text-white transition-all duration-500 transform group-hover:translate-y-[-30%]">
                       {projectDetail.content}
                     </h1>
                   </div>
                 </div>
+
                 {/* Lower than xl size contaianer - end */}
 
                 {/* Higher than xl size container - start */}
                 <div
-                  className="xl:block hidden border-4 border-accent  transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer"
+                  className="xl:block hidden border-4 border-accent  transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer hover:group-hover"
                   style={{ maxWidth: "500px", width: "100%" }}
                 >
-                  <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                  <div className="bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
 
                   <Image
                     src={projectDetail.src}
                     alt={projectDetail.alt}
                     width={400}
                     height={100}
-                    className="h-66 cursor-pointer group-hover:scale-125 object-cover transition-all duration-500"
+                    className="h-66 cursor-pointer scale-10 object-cover transition-all duration-500"
                   />
 
-                  <div className="absolute -bottom-full left-12 lg:group-hover:bottom-28 md:group-hover:bottom-28 transition-all duration-500 z-50">
-                    <span className="text-gradient font-bold text-lg ">
+                  <div className="absolute  left-12 bottom-28 transition-all duration-500 z-50">
+                    <h1 className="text-gradient font-bold text-lg  transition-all duration-500 transform group-hover:translate-y-[-50%]">
                       {projectDetail.title}
-                    </span>
+                    </h1>
                   </div>
 
-                  <div className="absolute -bottom-full left-12 lg:group-hover:bottom-20 md:group-hover:bottom-20 transition-all duration-700 z-50">
-                    <h1 className="text-sm font-normal   text-white">
+                  <div className="absolute left-12  bottom-20 transition-all duration-700 z-50">
+                    <h1 className="text-sm font-normal   text-white transition-all duration-500 transform group-hover:translate-y-[-30%]">
                       {projectDetail.content}
                     </h1>
                   </div>
                 </div>
-
-                {/* Higher than xl size container - start */}
+                {/* Higher than xl size container - end */}
               </div>
             ))}
-
-            {/* item */}
 
             {/* group -end */}
           </div>
