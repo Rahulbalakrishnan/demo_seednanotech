@@ -26,7 +26,7 @@ export default function Blogs() {
     <div className="w-full h-screen" style={{ userSelect: "none" }}>
       <section id="Blogs" className=" pt-12 px-8 text-white">
         <div className=" text-gradient text-lg font-bold pt-9 ">
-          <h1 className="z-10 pb-4 md:items-center  lg:pb-8 lg:text-2xl lg:pt-5">
+          <h1 className="z-10 pb-5 md:items-center  lg:pb-8 lg:text-2xl lg:pt-5">
             LATEST BLOGS
           </h1>
         </div>
@@ -40,11 +40,11 @@ export default function Blogs() {
               <div
                 key={index}
                 id="item"
-                className="flex flex-col py-2 md:px-2 md:pt-24 lg:pt-16 lg:mx-10 "
+                className="flex flex-col py-3 md:px-2 md:pt-24 lg:pt-16 lg:mx-10 "
               >
                 {/* Lower than xl size contianer - start */}
                 <div
-                  className="xl:hidden flex flex-col border-4 border-accent transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer hover:group-hover"
+                  className="xl:hidden flex flex-col border-2 border-accent transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer hover:group-hover"
                   style={{ maxWidth: "300px", width: "100%" }}
                 >
                   <div className="bg-black/70 w-full h-full absolute z-10 transition-all duration-300 "></div>
@@ -76,7 +76,7 @@ export default function Blogs() {
 
                 {/* Higher than xl size container - start */}
                 <div
-                  className="xl:block hidden border-4 border-accent  transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer hover:group-hover"
+                  className="xl:block hidden border-2 border-accent  transform transition-transform hover:scale-105 group relative overflow-hidden cursor-pointer hover:group-hover"
                   style={{ maxWidth: "500px", width: "100%" }}
                 >
                   <div className="bg-black/70 w-full h-full absolute z-10 transition-all duration-300"></div>
@@ -112,7 +112,7 @@ export default function Blogs() {
             {/* group -end */}
           </div>
           <div className="flex flex-col items-center py-2">
-            <a className="border-2 btn px-4 py-1 cursor-pointer rounded-md text-sm items-center sm:text-lg md:text-xl">
+            <a className="border-2 border-accent btn px-4 py-1 cursor-pointer rounded-md text-sm items-center sm:text-lg md:text-xl">
               View All
             </a>
           </div>
