@@ -31,11 +31,11 @@ export default function TopNavigation() {
   return (
     <>
       <nav className="fixed w-full" style={{ userSelect: "none" }}>
-        <div className="flex mx-8 my-2 justify-between items-center">
+        <div className="flex mx-4 my-2 justify-between items-center">
           {/* Company logo */}
           <div className="flex ">
             <Image
-              src={"/Image/toplogo.png"}
+              src={str.COMPANY_LOGO}
               alt="logo icon"
               width={50}
               height={25}
@@ -84,8 +84,8 @@ export default function TopNavigation() {
 
           {isDrawerOpen && (
             <div
-              className="lg:hidden bg-white flex flex-col absolute top-0 left-0 w-full h-screen items-center pt-20 shadow-md "
-              style={{ backgroundImage: 'url("/Image/bg-main.jpg")'}}
+              className=" overflow lg:hidden bg-white flex flex-col absolute top-0 left-0 w-full h-screen items-center pt-20 shadow-md "
+              style={{ backgroundImage: 'url("/Assets/bg-main.jpg")' }}
             >
               {tabs.map((tab) => {
                 return (

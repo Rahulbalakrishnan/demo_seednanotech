@@ -100,7 +100,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 
-  overflow-y: scroll;
+
 }
 
 body::-webkit-scrollbar {

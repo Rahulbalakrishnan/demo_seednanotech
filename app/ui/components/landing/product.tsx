@@ -22,8 +22,8 @@ export default function Product() {
                 <h1 className="lg:text-lg">{product.title}</h1>
                 <div className="font-light">
                   <ul className="list-disc ps-4 font-thin">
-                    <li key={product.firstData[1]}>{product.firstData[0]}</li>
-                    <li key={product.secondData[1]}>{product.secondData[0]}</li>
+                    <li>{product.firstData}</li>
+                    <li>{product.secondData}</li>
                   </ul>
                 </div>
               </div>

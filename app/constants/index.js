@@ -29,20 +29,20 @@ export const NavigationItems = [
 
 export const ProductDetails = [
   {
-    // {a1...c2} are additional unique keys to bypass <li> warning 
+    
     title: str.BIO_TECH_TITLE,
-    firstData: [str.BIO_TECH_FIRST_DATA, "a1"], 
-    secondData: [str.BIO_TECH_SECOND_DATA,"a2"],
+    firstData: [str.BIO_TECH_FIRST_DATA],
+    secondData: [str.BIO_TECH_SECOND_DATA],
   },
   {
     title: str.ENV_PROTECTION_TITLE,
-    firstData: [str.ENV_PROTECTION_FIRST_DATA, "b1"],
-    secondData: [str.ENV_PROTECTION_SECOND_DATA, "b2"],
+    firstData: [str.ENV_PROTECTION_FIRST_DATA],
+    secondData: [str.ENV_PROTECTION_SECOND_DATA],
   },
   {
     title: str.AGRI_FOOD_TITLE,
-    firstData: [str.AGRI_FOOD_FIRST_DATA,  "c1"],
-    secondData: [str.AGRI_FOOD_SECOND_DATA,  "c2"],
+    firstData: [str.AGRI_FOOD_FIRST_DATA],
+    secondData: [str.AGRI_FOOD_SECOND_DATA],
   },
 ];
 

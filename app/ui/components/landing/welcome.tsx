@@ -7,7 +7,7 @@ export default function Welcome() {
     <div
       className="flex h-screen"
       style={{
-        backgroundImage: 'url("/Image/bg-main.jpg")',
+        backgroundImage: 'url("/Assets/bg-main.jpg")',
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         userSelect: "none",
@@ -21,7 +21,7 @@ export default function Welcome() {
         >
           <div id="image" className="flex">
             <Image
-              src={"/Image/logo.jpg"}
+              src={str.COMPANY_LOGO_MAIN}
               width={250}
               height={250}
               alt="Logo"
