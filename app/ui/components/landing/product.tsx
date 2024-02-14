@@ -8,7 +8,7 @@ export default function Product() {
     <div className="w-full h-screen" style={{ userSelect: "none" }}>
       <section id="Product" className=" pt-12 px-8 text-white">
         <div className=" text-gradient text-lg font-bold pt-9 ">
-          <h1 className=" md:items-center lg:pb-8 lg:text-2xl lg:pt-5">
+          <h1 className="pb-2 md:items-center  lg:pb-8 lg:text-2xl lg:pt-5">
             {str.PRODUCT_SEC_HEADER}
           </h1>
         </div>
@@ -16,7 +16,6 @@ export default function Product() {
           id="main_product_div"
           className="flex flex-col lg:flex-row lg:justify-between"
         >
-        
           <div id="content_div" className="flex flex-col">
             {productDetails.map((product, index) => (
               <div key={index} id="main_div" className="lg:py-2">
@@ -36,7 +35,6 @@ export default function Product() {
             >
               {str.BTN_ONE}
             </Link>
-            
           </div>
 
           <div id="video_div" className="flex flex-col  pt-1  ">
