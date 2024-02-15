@@ -98,22 +98,22 @@ export const ProjectDetails = [
 
 export const BlogDetails = [
   {
-    src: str.PD_FUTURE_SRC,
-    alt: str.PD_FUTURE_ALT,
-    title: str.PD_FUTURE_TITLE,
-    content: str.PD_FUTURE_CONTENT,
+    src: str.BD_FUTURE_SRC,
+    alt: str.BD_FUTURE_ALT,
+    title: str.BD_FUTURE_TITLE,
+    content: str.BD_FUTURE_CONTENT,
   },
   {
-    src: str.PD_ATTENDING_SRC,
-    alt: str.PD_ATTENDING_ALT,
-    title: str.PD_ATTENDING_TITLE,
-    content: str.PD_ATTENDING_CONTENT,
+    src: str.BD_ATTENDING_SRC,
+    alt: str.BD_ATTENDING_ALT,
+    title: str.BD_ATTENDING_TITLE,
+    content: str.BD_ATTENDING_CONTENT,
   },
   {
-    src: str.PD_SENSORS_SRC,
-    alt: str.PD_SENSORS_ALT,
-    title: str.PD_SENSORS_TITLE,
-    content: str.PD_SENSORS_CONTENT,
+    src: str.BD_SENSORS_SRC,
+    alt: str.BD_SENSORS_ALT,
+    title: str.BD_SENSORS_TITLE,
+    content: str.BD_SENSORS_CONTENT,
   },
 ];
 

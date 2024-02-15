@@ -58,9 +58,9 @@ export const BTN_ONE = "Read more...";
 export const BTN_TWO = "Learn more...";
 
 export const BIO_TECH_TITLE = "Biotechnology & Quantum Photonics";
-export const BIO_TECH_FIRST_DATA = "Biosensor Technology – A Game Changer";
+export const BIO_TECH_FIRST_DATA = "Biosensor Technology: A Game Changer";
 export const BIO_TECH_SECOND_DATA =
-  "Early disease detection – SPR, Quantum, Optical Sensors & AI";
+  "Early disease detection: SPR, Quantum, Optical Sensors & AI";
 
 export const ENV_PROTECTION_TITLE = "Environmental Protection & Meteorology";
 export const ENV_PROTECTION_FIRST_DATA = "NO2, Humidity Sensors & AI";
@@ -93,32 +93,32 @@ export const PD_LIMITS_CONTENT =
 export const BLOG_SEC_HEADER = " LATEST BLOGS";
 export const BLOG_SEC_BTN_TEXT = "View All";
 
-export const PD_FUTURE_SRC = "/Assets/Images/Images_blogs/blog_item1.png";
-export const PD_FUTURE_ALT = "item1";
-export const PD_FUTURE_TITLE = "The Future of Nano sensors:";
-export const PD_FUTURE_CONTENT =
+export const BD_FUTURE_SRC = "/Assets/Images/Images_blogs/blog_item1.png";
+export const BD_FUTURE_ALT = "item1";
+export const BD_FUTURE_CONTENT =
   "Revolutionizing data collection and analysis.";
+export const BD_FUTURE_TITLE = "The Future of Nano sensors:";
 
-export const PD_ATTENDING_SRC = "/Assets/Images/Images_blogs/blog_item2.png";
-export const PD_ATTENDING_ALT = "item2";
-export const PD_ATTENDING_TITLE = "5 Benefits you get attending:";
-export const PD_ATTENDING_CONTENT =
-  "International conferences of technology and management.";
+export const BD_ATTENDING_SRC = "/Assets/Images/Images_blogs/blog_item2.png";
+export const BD_ATTENDING_ALT = "item2";
+export const BD_ATTENDING_CONTENT =
+  " Attending International conferences of technology and management.";
+export const BD_ATTENDING_TITLE = "5 Benefits you get";
 
-export const PD_SENSORS_SRC = "/Assets/Images/Images_blogs/blog_item3.png";
-export const PD_SENSORS_ALT = "item3";
-export const PD_SENSORS_TITLE = "Resonance/SPR sensors:";
-export const PD_SENSORS_CONTENT =
+export const BD_SENSORS_SRC = "/Assets/Images/Images_blogs/blog_item3.png";
+export const BD_SENSORS_ALT = "item3";
+export const BD_SENSORS_CONTENT =
   "Advantages of surface plasmon resonance/spr sensors in Brampton.";
+export const BD_SENSORS_TITLE = " Resonance/spr sensors";
 
 export const RES_SEC_HEADER =
   "APPLIED RESEARCH, INNOVATION, AND PROTOTYPE ENGINEERING";
 
 export const RD_MAGNETO_SRC = "/Assets/Images/Images_research/res_item1.jpg";
-export const PD_MAGNETO_ALT = "item1";
+export const RD_MAGNETO_ALT = "item1";
 export const RD_MAGNETO_TITLE = "Magneto-Optics:";
 export const RD_MAGNETO_CONTENT =
-  "functionalities – next generation technologies.";
+  "functionalities  next generation technologies.";
 
 export const RD_NANO_SRC = "/Assets/Images/Images_research/res_item2.jpg";
 export const RD_NANO_ALT = "item2";
