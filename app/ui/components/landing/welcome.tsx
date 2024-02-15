@@ -83,7 +83,7 @@ export default function Welcome() {
 
             <motion.div
               initial="hidden"
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("up", 0.6)}
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               id="phone"
