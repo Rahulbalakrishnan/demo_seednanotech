@@ -21,14 +21,7 @@ export default function Welcome() {
           id="container"
           className="flex flex-col items-center pt-10 sm:items-start sm:ps-8"
         >
-          <motion.div
-            initial="hidden"
-            variants={fadeIn("up", 0.5)}
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.9 }}
-            id="image"
-            className="flex"
-          >
+          <div id="image" className="flex">
             <Image
               src={str.COMPANY_LOGO_MAIN}
               width={250}
@@ -36,18 +29,14 @@ export default function Welcome() {
               alt="Logo"
               className="rounded-full  bg-transparent border-2 shadow-2xl border-purple-600 "
             />
-          </motion.div>
+          </div>
           <div
             id="social_details"
             className="flex  flex-col items-center sm:items-start sm:ps-3 "
           >
             <div id="social_icons" className="flex  pt-4 ">
               {socialIcons.map((icon, index) => (
-                <motion.a
-                  initial="hidden"
-                  variants={fadeIn("up", 0.6)}
-                  whileInView={"show"}
-                  viewport={{ once: false, amount: 0.9 }}
+                <a
                   key={index}
                   href={icon.href}
                   target="_blank"
@@ -60,15 +49,11 @@ export default function Welcome() {
                     height={20}
                     className="w-8 h-8 mx-1"
                   />
-                </motion.a>
+                </a>
               ))}
             </div>
 
-            <motion.div
-              initial="hidden"
-              variants={fadeIn("up", 0.7 )}
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.9 }}
+            <div
               id="gmail"
               className="flex pt-2  text-white font-semibold text-lg sm:ps-1"
             >
@@ -79,13 +64,9 @@ export default function Welcome() {
                 height={20}
               />
               <a className="ps-2">{str.GMAIL_ID}</a>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial="hidden"
-              variants={fadeIn("up", 0.8)}
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.9 }}
+            <div
               id="phone"
               className=" flex text-white  font-semibold text-lg sm:ps-1"
             >
@@ -96,7 +77,7 @@ export default function Welcome() {
                 height={20}
               />
               <a className="ps-2">{str.MOBILE_NO}</a>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
