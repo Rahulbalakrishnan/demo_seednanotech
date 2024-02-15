@@ -19,7 +19,7 @@ export default function Product() {
           <div id="content_div" className="flex flex-col">
             {productDetails.map((product, index) => (
               <div key={index} id="main_div" className="lg:py-2">
-                <h1 className="lg:text-lg">{product.title}</h1>
+                <h1 className="lg:text-lg text-fuchsia-400">{product.title}</h1>
                 <div className="">
                   <ul className="list-disc ps-4 font-thin">
                     <li  className="font-light">{product.firstData}</li>
