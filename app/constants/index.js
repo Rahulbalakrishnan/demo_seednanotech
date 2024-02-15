@@ -137,3 +137,24 @@ export const ResDetails = [
     content: str.RD_MODIFIED_SPR_CONTENT,
   },
 ];
+
+export const ContactDetails = [
+  {
+    src: str.CD_CALL_SRC,
+    alt: str.CD_CALL_ALT,
+    title: str.CD_CALL_TITLE,
+    info: str.CD_CALL_INFO,
+  },
+  {
+    src: str.CD_EMAIL_SRC,
+    alt: str.CD_EMAIL_ALT,
+    title: str.CD_EMAIL_TITLE,
+    info: str.CD_EMAIL_INFO,
+  },
+  {
+    src: str.CD_CONTACT_SRC,
+    alt: str.CD_CONTACT_ALT,
+    title: str.CD_CONTACT_TITLE,
+    info: str.CD_CONTACT_INFO,
+  },
+];

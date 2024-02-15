@@ -46,7 +46,7 @@ export const TR_ALT = "Twitter icon";
 export const TR_HREF = "https://twitter.com/SNanotechinc";
 
 export const GMAIL_ID = "info@seed-nanotech.com";
-export const GMAIL_ICON = "/Assets/Icons/Icon_social/mail.svg";
+export const GMAIL_ICON = "/Assets/Icons/Icon_social/gmail.svg";
 export const GMAIL_ALT = "Gmail icon";
 
 export const MOBILE_NO = "+1 (905) 452 5200";
@@ -131,3 +131,20 @@ export const RD_MODIFIED_SPR_ALT = "item3";
 export const RD_MODIFIED_SPR_TITLE = "Modified SPR:";
 export const RD_MODIFIED_SPR_CONTENT =
   "Modified SPR phenomena leading to new devices.";
+
+
+
+export const CD_CALL_SRC = "/Assets/Icons/Icon_social/phone.svg";
+export const CD_CALL_ALT = "item2";
+export const CD_CALL_TITLE = "Call Us:";
+export const CD_CALL_INFO = "+1 (905) 452 5200";
+
+export const CD_EMAIL_SRC = "/Assets/Icons/mail.svg";
+export const CD_EMAIL_ALT = "item1";
+export const CD_EMAIL_TITLE = "Email Us:";
+export const CD_EMAIL_INFO = "info@seed-nanotech.com";
+
+export const CD_CONTACT_SRC = "/Assets/Icons/contact.png";
+export const CD_CONTACT_ALT = "item3";
+export const CD_CONTACT_TITLE = "Contact:";
+export const CD_CONTACT_INFO = "Fill Details";
