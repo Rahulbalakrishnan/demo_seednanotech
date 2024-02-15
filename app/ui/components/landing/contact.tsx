@@ -6,8 +6,10 @@ export default function Contact() {
   return (
     <div className="w-full h-screen " style={{ userSelect: "none" }}>
       <section id="Contact" className="pt-20 px-8 text-white">
-        <div className="text-gradient text-lg font-bold">
-          <h1 className="z-10 pb-6 md:text-center md:pt-10 ">CONTACT US</h1>
+        <div className="text-gradient text-lg font-bold pt-1">
+          <h1 className="z-10 pb-10 md:text-center md:pt-10 md:pb-6">
+            {str.CONTACT_SEC_HEADER}
+          </h1>
         </div>
 
         <div id="Main_contact_div" className="flex flex-col   ">
@@ -42,7 +44,7 @@ export default function Contact() {
 
           <div id="connect_div ">
             <h1 className="text-center text-gradient font-bold md:pt-10 ">
-              Connect with us:
+            {str.CONTACT_SEC_FOOTER}
             </h1>
             <div id="social_icons" className="flex justify-center pt-1">
               {socialIcons.map((icon, index) => (

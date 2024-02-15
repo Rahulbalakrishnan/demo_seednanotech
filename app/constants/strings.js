@@ -132,7 +132,8 @@ export const RD_MODIFIED_SPR_TITLE = "Modified SPR:";
 export const RD_MODIFIED_SPR_CONTENT =
   "Modified SPR phenomena leading to new devices.";
 
-
+export const CONTACT_SEC_HEADER = "CONTACT US";
+export const CONTACT_SEC_FOOTER = "Connect with us:";
 
 export const CD_CALL_SRC = "/Assets/Icons/Icon_social/phone.svg";
 export const CD_CALL_ALT = "item2";
