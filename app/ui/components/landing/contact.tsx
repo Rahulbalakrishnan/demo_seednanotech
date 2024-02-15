@@ -15,7 +15,7 @@ export default function Contact() {
         <div id="Main_contact_div" className="flex flex-col   ">
           <div
             id="contact_div"
-            className="flex  flex-col items-center pb-16 md:flex-row md:mx-2 md:justify-evenly md:pt-10 "
+            className="flex  flex-col items-center pb-14 md:flex-row md:mx-2 md:justify-evenly md:pt-10 "
           >
             {contactDetails.map((contactDetail, index) => (
               <div
