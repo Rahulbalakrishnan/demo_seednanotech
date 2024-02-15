@@ -23,9 +23,9 @@ export default function Welcome() {
         >
           <motion.div
             initial="hidden"
-            variants={fadeIn("up", 0.3)}
+            variants={fadeIn("up", 0.5)}
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.9 }}
             id="image"
             className="flex"
           >
@@ -45,9 +45,9 @@ export default function Welcome() {
               {socialIcons.map((icon, index) => (
                 <motion.a
                   initial="hidden"
-                  variants={fadeIn("up", 0.4)}
+                  variants={fadeIn("up", 0.6)}
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.7 }}
+                  viewport={{ once: false, amount: 0.9 }}
                   key={index}
                   href={icon.href}
                   target="_blank"
@@ -66,9 +66,9 @@ export default function Welcome() {
 
             <motion.div
               initial="hidden"
-              variants={fadeIn("up", 0.5 )}
+              variants={fadeIn("up", 0.7 )}
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.9 }}
               id="gmail"
               className="flex pt-2  text-white font-semibold text-lg sm:ps-1"
             >
@@ -83,9 +83,9 @@ export default function Welcome() {
 
             <motion.div
               initial="hidden"
-              variants={fadeIn("up", 0.6)}
+              variants={fadeIn("up", 0.8)}
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.9 }}
               id="phone"
               className=" flex text-white  font-semibold text-lg sm:ps-1"
             >
