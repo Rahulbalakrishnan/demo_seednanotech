@@ -1,8 +1,6 @@
 import Image from "next/image";
 import * as str from "../../../constants/strings";
 import { SocialIcons as socialIcons } from "../../../constants/index.js";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../../lib/variants.js";
 
 export default function Welcome() {
   return (
