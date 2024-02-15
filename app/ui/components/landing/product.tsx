@@ -20,10 +20,10 @@ export default function Product() {
             {productDetails.map((product, index) => (
               <div key={index} id="main_div" className="lg:py-2">
                 <h1 className="lg:text-lg">{product.title}</h1>
-                <div className="font-light">
+                <div className="">
                   <ul className="list-disc ps-4 font-thin">
-                    <li>{product.firstData}</li>
-                    <li>{product.secondData}</li>
+                    <li  className="font-light">{product.firstData}</li>
+                    <li className="font-light">{product.secondData}</li>
                   </ul>
                 </div>
               </div>
